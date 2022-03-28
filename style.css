@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+* {
+  font-family: "Notosans";
+}
+
+h1 {
+  padding: 15px;
+}
+h2 {
+  font-size: 26px;
+  color: red;
+  border-bottom: 1px solid black;
+}
+
+.mainspace {
+  background-color: white;
+}
+
+div {
+  /* margin  border padding 테두리 ㅎㅎ
+    padding < border < margin
+    */
+
+  border: 1px solid #ededed; /* 실선 : solid */
+  box-shadow: 0px 1px 20px 0px rgba(255, 14, 66, 0.4); /*x크기, y크기, 흐림정도, 번짐 (rgba 그림자의 색)*/
+}
+
+.titlebox {
+  margin-top: 15px; /*margin : 떨어뜨리는 정도 ?*/
+}
+
+.buttonSection {
+  float: right;
+  margin-bottom: 50px;
+}
+.mainspace {
+  margin: 15px;
+}
+
+.imgSection {
+  /*width : 가로 length : 세로*/
+  width: 250px;
+}
