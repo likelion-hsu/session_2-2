@@ -1,0 +1,36 @@
+div {
+    border: 1px solid black;
+}
+
+/* .mainSpace {
+    padding: 30px;
+} */
+
+.titlebox {
+    margin: 30px;
+}
+
+.mainbox {
+    margin: 30px;
+}
+
+/*중복 마진은 그냥...합쳐진다...!!*/
+
+.mainsSpace {
+    padding: 30px;
+}
+
+.mainsSpace1 {
+    padding: 30px;
+    height: 300;
+}
+
+.titlebox1 {
+    float: right;
+    margin-right: 200px;
+}
+
+.mainbox1 {
+    width: 400px;
+    margin-left: 30px;
+}

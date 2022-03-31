@@ -9,11 +9,21 @@ h1 {
 h2 {
   font-size: 26px;
   color: red;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 .mainspace {
-  background-color: rgb(253, 203, 249);
+  background-color: rgb(255, 255, 255);
+  margin-left: 20px;
+}
+
+.categorybox {
+  width: 150px;
+  float: left;
+  font-size: 13px;
+  margin: 15px;
+  margin-left: 30px;
+  height: 300px;
 }
 
 div {
@@ -21,8 +31,8 @@ div {
     padding < border < margin
     */
 
-  border: 1px solid #ededed; /* 실선 : solid */
-  box-shadow: 0px 1px 20px 0px rgba(250, 100, 163, 0.945); /*x크기, y크기, 흐림정도, 번짐 (rgba 그림자의 색)*/
+  border: 1px solid #f3b5b5; /* 실선 : solid */
+  box-shadow: 0px 1px 20px 0px rgba(255, 215, 232, 0.945); /*x크기, y크기, 흐림정도, 번짐 (rgba 그림자의 색)*/
   margin: 15px;
 }
 
@@ -36,7 +46,8 @@ div {
 }
 
 .mainImg {
-  width: 300px;
+  width: 200px;
+  margin-bottom: 50px;
 }
 
 .imgSection {
