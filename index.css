@@ -1,0 +1,28 @@
+div {
+    border: 2px solid black;/*경계선*/
+}
+
+/* .mainSpace {
+    padding: 30px;
+} */
+
+.titlebox {
+    margin: 30px;/*마진은 바깥쪽에 생기는 여백*/
+}
+
+.mainbox {
+    margin: 30px;
+}
+.mainSpace1{
+    padding: 30px;
+}
+
+.titlebox1 {
+    float: right;
+    margin-right:200px;
+    margin-top:100px;
+}
+
+.mainbox1 {
+    width: 400px;
+}

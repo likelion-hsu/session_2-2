@@ -16,7 +16,7 @@ div{
 }
 
 .mainspace{
-    background-color:paleturquoise;
+    background-color:#fff;
 }
 
 .titlebox{
@@ -30,6 +30,13 @@ div{
     margin: 15px;
 }
 
+.categorybox{
+    width:120px;
+    float: left;
+    width: 115px;
+    margin: 15px;
+    height: 665px;
+}
 .mainImg{
     width:250px;
     float: right;
