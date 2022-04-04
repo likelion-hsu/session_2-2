@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+* {
+    font-family: "Black Han Sans";
+    text-align: center;
+}
+
+div {
+    border: 1px solid black;
+    margin: 30px;
+    padding: 30px;
+}
+
+.titleBox {
+    background-color: beige;
+}
+
+.startBox {
+    background-color: beige;
+}
+
+.resultBox {
+    background-color: beige;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.mainText {
+    font-size: 30px;
+}
+
+.show {
+    font-size: 30px;
+}
+
+.btn-secondary{
+    width: 200px;
+    height: 80px;
+    font-size: 30px;
+}
