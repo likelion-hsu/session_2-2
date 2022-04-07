@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto:ital,wght@0,900;1,300;1,900&family=Rubik+Bubbles&display=swap');
+
+*{
+    font-family: 'Grape Nuts', cursive;
+    text-align: center;
+}
+
+
+.box {
+    border: 5px solid black;
+    margin:30px;
+    padding-bottom: 30px;
+    height:550px;
+}
+
+.btn{
+    background-color: black !important;
+    font-size: 30px !important;
+    width: 150px;
+}
+
+.test{
+    display: none;
+}
+
+.resultY{
+    display: none;
+}
+
+.resultN{
+    display: none;
+}
