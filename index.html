@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 퀴즈만들기</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+        <div id="start" class="outline">
+            <img src="./img/Korea.jpg" alt="태극기 이미지">
+            <div class="txtwrap">
+                <h1>간단한 퀴즈 만들기</h1>
+                <h2>우리나라에 대한 간단한 퀴즈를 만들어보자</h2>
+            </div>
+            <div class="btn">
+                <button class="btn" onclick="showQuestion()">시작하기</button>
+            </div>
+        </div>
+
+
+        <div id="question" class="outline">
+            <h2>임진왜란은 1592년에 발생했다.</h2>
+            <div class="btnwrap">
+                <button class="btn" onclick="showCor()" id="corbtn">맞다</button>
+                <button class="btn" onclick="showWrong()" id="wrongbtn">틀리다</button>
+            </div>
+        </div>
+
+        <div id="cor" class="outline">
+            <h2>정답입니다!</h2>
+            <button id="goHome" onclick="goHome()">홈으로 가기</button>
+        </div>
+
+        <div id="wrong" class="outline">
+            <h2>다시 생각해볼까요?</h2>
+            <button id="retry" onclick="retry()">다시풀기</button>
+        </div>
+</body>
+<script src="./js/hideshow.js"></script>
+</html>
