@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class = "box">
+        <div>
+            <div class = start>
+                <div class = "tittlebox">
+    
+                <h1 class = "maintittle mt-5 text-center">
+                    간단한 퀴즈만들기 ㅎㅎㅎㅎ
+                </h1>
+    
+                <h3 class = "subtittle mt-5 text-center">
+                    우리나라 역사에 대한 퀴즈를 맞춰보자~
+                </h3>
+                </div>
+        </div>
+    
+        <div class="buttonbox text-center">
+            <button type="button" class="btn btn-success mt-5" onclick = "start();"> </button>
+        </div>
+    
+        <div class = "imgbox text-center">
+    
+            <img class = "startimg mt-5" src="Korea.jpg" alt = "Taegeukgi">
+        </div>
+    
+    
+        <div class = "test">
+            <div>
+                <h3>
+                    임진왜란은 1492년에 발발하였다.
+                </h3>
+            </div>
+    
+            <div>
+                <button type="button" class="btn btn-success mt-5">맞다</button>
+                <button type="button" class="btn btn-success mt-5">틀리다</button>
+            </div>
+        </div>
+    </div>
+   
+
+    <script>
+        function start() {
+            $(".start").hide();
+            $(".test").show();
+        }
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</body>
+</html>
