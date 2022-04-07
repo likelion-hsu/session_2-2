@@ -55,29 +55,37 @@
 
             <div>
 
-                <button type="button" class="btn btn-success mt-5">맞다</button>
-                <button type="button" class="btn btn-success mt-5">틀리다</button>
+                <button type="button" class="btn btn-success mt-5" onclick="right();">맞다</button>
+                <button type="button" class="btn btn-success mt-5" onclick="wrong();">틀리다</button>
 
             </div>
 
         </div>
 
         <div>
-            <div class="resulty">
+            <div class="resultY">
 
-                <div class="result">
+                <div>
 
-                    <h3 class="answery text-center">축하드립니다. 맞추셨습니다!</h3>
+                    <h3 class="text-center">
+                        축하드립니다. 맞추셨습니다!
+                    </h3>
                 
+                    <button type="button" class="btn btn-success mt-5" onclick="goback();">돌아가기</button>
+
                 </div>
 
             </div>
 
-            <div class="resultn">
+            <div class="resultN">
 
-                <div class="resultn">
+                <div>
 
-                    <h3 class="answern text-center">아쉽지만 다시 공부해봐요!</h3>
+                    <h3 class=" text-center">
+                        아쉽지만 다시 공부해봐요!
+                    </h3>
+
+                    <button type="button" class="btn btn-success mt-5" onclick="restart();">다시 해보기</button>
 
                 </div>
 
@@ -99,7 +107,28 @@
         function right() {
 
             $(".test").hide();
-            $)()
+            $(".resultY").show();
+
+        }
+
+        function wrong() {
+
+            $(".test").hide();
+            $(".resultN").show();
+
+        }
+
+        function restart() {
+
+            $(".resultN").hide();
+            $(".start").show();
+
+        }
+
+        function goback() {
+
+            $(".resultY").hide();
+            $(".start").show();
 
         }
 

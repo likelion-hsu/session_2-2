@@ -20,4 +20,10 @@
 
 .test {
     display: none;
+    margin-top: 230px;
+}
+
+.resultY, .resultN {
+    display: none;
+    margin-top: 250px;
 }
