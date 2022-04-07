@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class = "box">
+        <div class = "start">
+            <div class = "titlebox">
+                <h1 class = "maintitle mt-5 text-center">간단한 퀴즈 만들기</h1>
+                <!--text center는 text-align:center처럼 가운데 정렬해 준다는 의미.-->
+                <!--mt = margin top의 줄임말, 위 여백을 주는 것, 아래 여백을 주고 싶으면 mb를 쓰면 된다. -->
+                <h3 class = "subtitle mt-5 text-center">우리나라 역사에 대한 퀴즈를 맞춰보자</h3>
+            </div>
+
+            <div class = "buttonbox text-center">
+                <button type="button" class="btn btn-success mt-5" onclick = "start()">시작하기</button>
+            </div>
+
+            <div class = "imgbox text-center">
+                <img class = "startimg mt-5" src="KOREA.jpg" alt="태극기"> <!--alt 태그는 사진이 안 나올 때 설명해 주는 문구-->
+            </div>
+
+        </div>
+     <div class = "test">
+        <div>
+            <h3>임진왜란은 1592년에 발발하였다.</h3>
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-success mt-5"  onclick = "testY()">맞다</button>
+            <button type="button" class="btn btn-success mt-5"  onclick = "testN()">틀리다</button>
+        </div>
+     </div>
+
+     <article class = "resultY">
+         <div class = "result">
+             <h3 class = "resultY test-center mt-5">축하드립니다. 맞추셨습니다!</h3>
+         </div>
+     </article>
+
+     <article class = "resultN">
+        <div class = "result">
+            <h3 class = "resultN test-center mt-5">아쉽네요. 다시 공부해 봐요!</h3>
+        </div>
+    </article>
+    </div>
+
+    </div>
+
+    <script>
+        function start()
+        {
+            $(".start").hide(); // 가리는 함수
+            $(".test").show(); // 보여주는 함수
+        }
+
+        function testY()
+        {
+            $(".test").hide();
+            $(".resultY").show();
+
+        }
+
+        function testN()
+        {
+            $(".test").hide();
+            $(".resultN").show();
+
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+</html>
