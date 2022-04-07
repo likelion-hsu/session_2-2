@@ -25,6 +25,7 @@
 
 .test{
     display: none;
+    margin-top: 190px; 
 }
 
 .startimg{
@@ -33,4 +34,5 @@
 
 .resulty, .resultn {
     display: none;
+    margin-top: 240px;
 }
