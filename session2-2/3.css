@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+*{
+    font-family:"Nanum Myeongjo";
+    text-align:center;
+}
+
+.box{
+    border:1px solid black;
+    margin:30px;
+    padding-bottom:30px;
+    height:600px;
+}
+.btn{
+    background-color:black !important;
+    font-size:20px !important;
+    width:300px;
+}
+.buttonbox{
+    margin: 0 auto;
+}
+.test{
+    display: none;
+}
