@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+/*폰트*/
+* {
+    font-family: Song Myung;
+}
+
+/*배경서식*/
+/* body {
+    background-size: 1600px 1600px;
+    padding: 30px;
+} */
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    border: 5px solid black;
+    height: 550px;
+}
+
+.btn {
+    background-color: black ! important;
+    width: 130px;
+    height: 50px;
+}
+
+/*시작*/
+.mainSection {
+    margin: 0 auto;
+}
+
+.imgSection {
+    margin: 0 auto;
+}
+
+/*질문*/
+.test {
+    display: none;
+    margin-top: 190px;
+}
+
+.answerButton {
+    margin: 0 auto;
+}
+
+/*결과*/
+.resultY, .resultN {
+    display: none;
+    margin-top: 240px;
+}
