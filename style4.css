@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Nanum+Pen+Script&display=swap');
+
+* {
+    font-family: "Dongle";
+    text-align: center;
+}
+
+
+
+.box {
+    border: 5px solid black;
+    margin: 30px;
+    padding-bottom: 30px;
+    height: 550px;
+}
+
+.btn {
+    background-color: black !important;
+    font-size: 30px !important;
+    width: 150px;
+}
+
+.buttonBox {
+    margin: 0 auto;
+}
+
+.imgBox {
+    margin: 0 auto;
+}
+
+.test {
+    display: none;
+}
+
+.resultY {
+    display: none;
+}
+
+.resultN {
+    display: none;
+}
+
+.answerY {
+    font-size: 50px;
+    padding-top: 40px;
+}
