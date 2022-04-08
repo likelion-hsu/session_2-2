@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="box">
-        <div class= "start">
+        <article class= "start">
                 <div class ="titlebox">
                     <h1 class="maintitle mt-5 text-center">
                         간단한 퀴즈 만들기
@@ -25,22 +25,82 @@
                 <div class="imgbox text-center">
                     <img class="startimg mt-5 " src="Korea.jpg" alt="태극기">
                 </div>
-            </div>
-        
-        <div class="test">
+        </article>
+        <!--문제없음-->
+        <article class="test">
                 <div>
                     <h3>
                         임진 왜란은 1592년에 발발하였다.
                     </h3>
+                </div>        
+                <div class="answerbutton">
+                    <button type="button" class="btn btn-success mt-5" onclick = 'right();'>맞다</button>
+                    <button type="button" class="btn btn-success mt-5" onclick = 'left();'>아니다</button>
                 </div>
-                <button type="button" class="btn btn-success mt-5">정답입니다</button>
-                <button type="button" class="btn btn-success mt-5">오답입니다</button>
-        </div>
+        </article>
+        <!--문제없음-->
+        <article class="try">
+            <article class="retest">
+                <div>
+                    <h3>
+                    임진 왜란은 1592년에 발발하였다.
+                    </h3>
+                </div>        
+                <div class="answerbutton">
+                    <button type="button" class="btn btn-success mt-5" onclick = 'right1();'>맞다</button>
+                    <button type="button" class="btn btn-success mt-5" onclick = 'left1();'>아니다</button>
+                </div>
+            </article>
+        </article>
+
+        <article class="resultY">
+            <div class="result">
+                <h3 class="answer y text-center">정답입니다! 축하드립니다.</h3>
+            </div>
+        </article>
+        <article class="resultN">
+            <div class="result">
+                <h3 class="answer n text-center">오답입니다. 다시 한번 생각해주세요.</h3>
+            </div>
+            <div class="reanswer">
+                <h3 class="retry">다시 하시겠습니까?</h3>
+                <button type="button" class="btn btn-success mt-5" onclick = 'restart();'>재도전!</button>
+            </div>
+        </article>
+
         <script>
             function start(){
                 $(".start").hide();
                 $(".test").show();
             }
+
+            function right() {
+                $(".test").hide();
+                $(".resultY").show();
+            }
+
+            function left() {
+                $(".test").hide();
+                $(".resultN").show();
+            }
+
+            function restart(){
+                $(".reanswer").hide();
+                $(".resultN").hide();
+                $(".retest").show();
+            }
+
+            function right1() {
+                $(".retest").hide();
+                $(".resultY").show();
+            }
+
+            function left1() {
+                $(".retest").hide();
+                $(".resultN").show();
+            }
+
+            
         </script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>

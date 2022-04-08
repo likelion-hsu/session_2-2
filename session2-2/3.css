@@ -5,6 +5,12 @@
     text-align:center;
 }
 
+
+article {
+    display: flex;/*옆으로 정렬이라고 생각하면 될듯*/
+    flex-direction: column;/*column은 밑으로 쌓이는 방식임. 기본은 좌에서 우로 쌓이는 방식*/
+}
+
 .box{
     border:1px solid black;
     margin:30px;
@@ -20,5 +26,17 @@
     margin: 0 auto;
 }
 .test{
+    display: none;
+}
+
+.answerbutton {
+    margin: 0 auto;
+}
+
+.resultY, .resultN {
+    display: none;
+    margin-top: 240px;
+}
+.retest{
     display: none;
 }
