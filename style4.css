@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500&display=swap');
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+
+.box {
+    border: 5px solid black;
+    margin: 30px;
+    padding-bottom: 30px;
+    height: 550px;
+}
+
+.btn {
+    background-color: black !important;   /*강제로 바꿔주기 -> !important*/
+    font-size: 30px !important;
+    width: 200px;
+}
+
+.main {
+    margin: 0 auto;
+}
+
+.imgbox {
+    margin: 0 auto;
+}
+
+
+.test {
+    display: none;
+    margin-top: 190px;
+}
+
+.answerButton {
+    margin: 0 auto;
+}
+
+.Yes, .No {
+    display: none;
+    margin-top: 240px;
+}
+
+
+  
