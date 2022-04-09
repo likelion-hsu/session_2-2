@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=Song+Myung&display=swap');@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
+*{
+    font-family: Song Myung;
+}
+
+/* 몸통(배경) 서식 */
+body {
+    background-size: 1600px 1600px;
+    padding: 30px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    /* flex속성 북마크한 블로그 참조 */
+}
+
+.Box{
+    border: 5px solid black;
+    height: 550px;
+    /* 박스의 높이 */
+}
+
+.btn{
+    background-color: black !important;
+    /* 강제적으로 부트스트랩에서 정한 문법을 바꾸는 단어 */
+    font-size: 20px !important;
+    width: 150px;
+    height: 50px;
+}
+
+/*.buttonSection {
+    margin: 0 auto;
+    다음을 통해서도 가운데 정렬 할 수 있다.
+}
+
+.imgSection {
+    margin: 0 auto;
+} */
+
+/* 문제 */
+.secondSection {
+    display: none;
+    /* 화면에서 사라지는것 */
+    /* 이 속성을 넣어야 첫 화면에서 다음 문제가 보이지 않음 */
+    margin-top: 190px;
+} 
+
+.answerButton {
+    margin: 0 auto;
+    /* margin 0 auto; - auto의 의미는 좌우 여백의 사이즈를 동일하게 하겠다는 의미 */
+}
+
+/*결과*/
+.resultY, .resultN {
+    display: none;
+    margin-top: 240px;
+}

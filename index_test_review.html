@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- ! + Enter 기본적인 틀 환성 -->
+<!-- !입력후 엔터를 치면 기본적인 폼이 완성된다. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_test_review.css">
+    <!-- css 연결 -->
+    <!-- link단축키 link:css 입력 후 Enter -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- bootstrap 연결 -->
+</head>
+<body>
+    <div class = "Box">
+    <!-- 페이지 전체를 감싸는 테두리를 표시하기 위한 커다란 박스 생성  -->
+        <article class = "firstSection">
+            <!-- 시작화면 -->
+
+            <div class = "titleSection">
+                            <!-- 이 상위 div태그에만 마진과 가운데 정렬하여도
+                            하위 두 제목의 문장이 가운데 정렬이되나 
+                            서로 간격을 주기위해 각각의 문장의 마진이 없고
+                            이 태그의 영역만 마진을 갖게 된다. -->
+
+                <!-- 제목 박스 -->
+                <h1 class = "mainTitle mt-5 text-center">간단한 퀴즈 만들기</h1>
+                <!-- 제목 문장 -->
+                <!-- mt : margin top의 줄임말 -->
+                <!-- 꼭 css에서가 아니라 html에서도 쓸 수 있다. -->
+                <h3 class = "subTitle mt-5 text-center">우리나라 역사에 대한 퀴즈를 맞춰보자</h3>
+                <!-- 부제목 문장 -->
+            </div>
+
+            <div class = "buttonSection mt-5 text-center">
+                <!-- 버튼 박스-->
+                <button type="button" class="btn btn-success" onclick = 'start();'>시작하기</button>
+                                                            <!-- script를 이용한 함수 추가 -->
+                <!-- 버튼 -->
+            </div>
+
+            <div class = "imgSection mt-5 text-center">
+                <!-- 이미지 박스 -->
+                <img class = "startImg" src = "Korea.jpg" alt = "태극기">
+                <!-- img 태그의 src 속성은 이미지 소스의 URL을 명시합니다. -->
+                <!-- are 태그의 alt속성은 이미지를 보여줄 수 없을 때 대신 보여줄 대체 텍스트를 명시합니다. -->
+
+                <!-- img태그는 inline요소이므로 상위의 block요소의 div에 text-align속성을 준것 -->
+            </div>
+        </article>
+
+
+
+        <article class = "secondSection">
+            <!-- 문제화면 -->
+            <div class = "questionSection text-center">
+                <!-- 1.block 요소(div, h1~6)에만 text-align속성을 적용할수 있다.
+                2.정렬되는 것은 block요소 안의  inline 요소만 가능하다. 
+                3.다음과 같이 위의 div태그, 밑의 h3태그에서도 text-align을 모두 쓸 수 있다
+                두 경우 모두 그안의 inline인 text자체가 가운데 정렬이 되는것 -->
+                <h3 class = "questionTitle">
+                    임진왜란은 1592년에 발발하였다.
+                </h3>
+            </div>
+
+            <div class = "answerButton mt-5">
+                <button type="button" class="btn btn-success" onclick = 'right();'>맞다</button>
+                <button type="button" class="btn btn-success" onclick = 'wrong();'>아니다</button>
+            </div>
+        </article>
+
+
+        <article class = "resultY">
+            <!-- 정답 결과화면 -->
+            <div class = "true text-center">
+                <h3>축하드립니다. 맞추셨습니다!</h3>
+            </div>
+        </article>
+
+
+        <article class = "resultN">
+            <!-- 오답 결과화면 -->
+            <div class = "false text-center">
+                <h3>아쉽지만 다시 공부해봐요!</h3>
+            </div>
+        </article>
+
+    </div>
+
+    
+    <script>
+        function start(){
+            // 시작화면 >> 문제화면
+            $(".firstSection").hide();
+            $(".secondSection").show();
+        }
+
+        function right(){
+            // 문제화면 >> 정답 결과화면
+            $(".secondSection").hide();
+            $(".resultY").show();
+        }
+
+        function wrong(){
+            // 문제화면 >> 오답 결과화면
+            $(".secondSection").hide();
+            $(".resultN").show();
+        }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</body>
+</html>
