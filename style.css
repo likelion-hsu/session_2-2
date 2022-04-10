@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+* {
+    font-family: Song Myung;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    border: 5px solid black;
+    height: 600px;
+}
+
+.btn {
+    background-color: black ! important;
+    width: 130px;
+    height: 50px;
+}
+
+.mainSection {
+    margin: auto;
+}
+
+.imgSection {
+    margin: auto;
+}
+
+.test {
+    display: none;
+    margin-top: 190px;
+}
+
+.answerButton {
+    margin: auto;
+}
+
+.resultY, .resultN {
+    display: none;
+    margin-top: 240px;
+}
